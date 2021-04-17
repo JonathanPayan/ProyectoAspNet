@@ -7,23 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCModel
+namespace ConstructoraUdeCModel.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class RECEIPT
+    public partial class SEC_USER_ROLE
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public RECEIPT()
-        {
-            this.PAYMENT = new HashSet<PAYMENT>();
-        }
-    
         public int ID { get; set; }
-        public string DESCRIPTION { get; set; }
+        public int USERID { get; set; }
+        public int ROLEID { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PAYMENT> PAYMENT { get; set; }
+        public virtual SEC_ROLE SEC_ROLE { get; set; }
+        public virtual SEC_USER SEC_USER { get; set; }
     }
 }

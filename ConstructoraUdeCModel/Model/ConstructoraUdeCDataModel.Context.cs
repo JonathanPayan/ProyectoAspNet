@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCModel
+namespace ConstructoraUdeCModel.Model
 {
     using System;
     using System.Data.Entity;

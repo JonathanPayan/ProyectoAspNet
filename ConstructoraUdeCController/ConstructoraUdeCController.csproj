@@ -50,14 +50,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\DTOBase.cs" />
+    <Compile Include="DTO\SecurityModule\RoleDTO.cs" />
+    <Compile Include="Implementation\SecurityModule\RoleImpController.cs" />
+    <Compile Include="Mapper\GeneralMapper.cs" />
+    <Compile Include="Mapper\SecurityModule\RoleDTOMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ConstructoraUdeCModel\ConstructoraUdeCModel.csproj">
+      <Project>{9df1b76c-0754-4f8e-8379-3750a1a6cdb2}</Project>
+      <Name>ConstructoraUdeCModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

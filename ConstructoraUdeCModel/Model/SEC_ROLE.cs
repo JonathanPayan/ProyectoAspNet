@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCModel
+namespace ConstructoraUdeCModel.Model
 {
     using System;
     using System.Collections.Generic;
@@ -22,6 +22,8 @@ namespace ConstructoraUdeCModel
     
         public int ID { get; set; }
         public string NAME { get; set; }
+        public bool REMOVED { get; set; }
+        public string DESCRIPTION { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SEC_USER_ROLE> SEC_USER_ROLE { get; set; }

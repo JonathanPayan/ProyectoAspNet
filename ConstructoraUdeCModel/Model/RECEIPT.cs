@@ -7,23 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCModel
+namespace ConstructoraUdeCModel.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class FINANCIAL_INFORMATION
+    public partial class RECEIPT
     {
-        public int ID { get; set; }
-        public Nullable<int> INCOME_TOTAL { get; set; }
-        public string WORK_DATE { get; set; }
-        public string TIME_CURRENTE_JOB { get; set; }
-        public string FAMILY_REFERENCE_NAME { get; set; }
-        public string FAMILY_REFERENCE_PHONE { get; set; }
-        public string PERSONAL_REFERENCE { get; set; }
-        public string PERSONAL_REFERENCE_PHONE { get; set; }
-        public Nullable<int> CUSTOMER { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public RECEIPT()
+        {
+            this.PAYMENT = new HashSet<PAYMENT>();
+        }
     
-        public virtual CUSTOMER CUSTOMER1 { get; set; }
+        public int ID { get; set; }
+        public string DESCRIPTION { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PAYMENT> PAYMENT { get; set; }
     }
 }

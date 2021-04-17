@@ -7,32 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCModel
+namespace ConstructoraUdeCModel.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class SEC_USER
+    public partial class PROJECT
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public SEC_USER()
+        public PROJECT()
         {
-            this.SEC_SESSION = new HashSet<SEC_SESSION>();
-            this.SEC_USER_ROLE = new HashSet<SEC_USER_ROLE>();
+            this.BLOCK = new HashSet<BLOCK>();
         }
     
-        public int ID { get; set; }
+        public string CODE { get; set; }
         public string NAME { get; set; }
-        public string LASTNAME { get; set; }
-        public string CELLPHONE { get; set; }
-        public string EMAIL { get; set; }
-        public string USER_PASSWORD { get; set; }
-        public string ACTIONCITY { get; set; }
+        public string DESCRIPTION { get; set; }
+        public string IMAGE { get; set; }
+        public string CITY { get; set; }
     
-        public virtual CITY CITY { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SEC_SESSION> SEC_SESSION { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SEC_USER_ROLE> SEC_USER_ROLE { get; set; }
+        public virtual ICollection<BLOCK> BLOCK { get; set; }
+        public virtual CITY CITY1 { get; set; }
     }
 }

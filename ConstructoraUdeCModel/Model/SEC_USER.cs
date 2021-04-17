@@ -7,35 +7,32 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCModel
+namespace ConstructoraUdeCModel.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class CUSTOMER
+    public partial class SEC_USER
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public CUSTOMER()
+        public SEC_USER()
         {
-            this.FINANCIAL_INFORMATION = new HashSet<FINANCIAL_INFORMATION>();
-            this.REQUEST = new HashSet<REQUEST>();
+            this.SEC_SESSION = new HashSet<SEC_SESSION>();
+            this.SEC_USER_ROLE = new HashSet<SEC_USER_ROLE>();
         }
     
         public int ID { get; set; }
-        public string DOCUMENT { get; set; }
         public string NAME { get; set; }
         public string LASTNAME { get; set; }
-        public System.DateTime BIRTHDATE { get; set; }
-        public string PHOTO { get; set; }
-        public string PHONE { get; set; }
+        public string CELLPHONE { get; set; }
         public string EMAIL { get; set; }
-        public string ADDRESS { get; set; }
-        public string CITY { get; set; }
+        public string USER_PASSWORD { get; set; }
+        public string ACTIONCITY { get; set; }
     
-        public virtual CITY CITY1 { get; set; }
+        public virtual CITY CITY { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<FINANCIAL_INFORMATION> FINANCIAL_INFORMATION { get; set; }
+        public virtual ICollection<SEC_SESSION> SEC_SESSION { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<REQUEST> REQUEST { get; set; }
+        public virtual ICollection<SEC_USER_ROLE> SEC_USER_ROLE { get; set; }
     }
 }
