@@ -5,11 +5,15 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructoraUdeC", "ConstructoraUdeC\ConstructoraUdeC.csproj", "{6100FB0A-42EC-4D75-8C72-7B5D9A15C0D2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vista", "Vista", "{B975A0AB-4487-4E1B-A377-2ED548A5DA6A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{B975A0AB-4487-4E1B-A377-2ED548A5DA6A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controlador", "Controlador", "{0FF9C969-F806-403F-910E-9FCD5095F747}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controller", "Controller", "{0FF9C969-F806-403F-910E-9FCD5095F747}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modelo", "Modelo", "{00F3EFAD-1E47-4722-996D-FF7015F5BD90}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{00F3EFAD-1E47-4722-996D-FF7015F5BD90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructoraUdeCModel", "ConstructoraUdeCModel\ConstructoraUdeCModel.csproj", "{9DF1B76C-0754-4F8E-8379-3750A1A6CDB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructoraUdeCController", "ConstructoraUdeCController\ConstructoraUdeCController.csproj", "{E2E82610-3A82-4C1D-97E1-B1ABAF5C5E95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,12 +25,22 @@ Global
 		{6100FB0A-42EC-4D75-8C72-7B5D9A15C0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6100FB0A-42EC-4D75-8C72-7B5D9A15C0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6100FB0A-42EC-4D75-8C72-7B5D9A15C0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF1B76C-0754-4F8E-8379-3750A1A6CDB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF1B76C-0754-4F8E-8379-3750A1A6CDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF1B76C-0754-4F8E-8379-3750A1A6CDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF1B76C-0754-4F8E-8379-3750A1A6CDB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2E82610-3A82-4C1D-97E1-B1ABAF5C5E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2E82610-3A82-4C1D-97E1-B1ABAF5C5E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2E82610-3A82-4C1D-97E1-B1ABAF5C5E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2E82610-3A82-4C1D-97E1-B1ABAF5C5E95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6100FB0A-42EC-4D75-8C72-7B5D9A15C0D2} = {B975A0AB-4487-4E1B-A377-2ED548A5DA6A}
+		{9DF1B76C-0754-4F8E-8379-3750A1A6CDB2} = {00F3EFAD-1E47-4722-996D-FF7015F5BD90}
+		{E2E82610-3A82-4C1D-97E1-B1ABAF5C5E95} = {0FF9C969-F806-403F-910E-9FCD5095F747}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {229C65A1-5CDC-4A0B-B09A-41D6701D5BB4}
