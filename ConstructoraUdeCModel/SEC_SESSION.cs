@@ -7,23 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCController
+namespace ConstructoraUdeCModel
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class PAYMENT
+    public partial class SEC_SESSION
     {
-        public int ID { get; set; }
-        public string CUSTOMER { get; set; }
-        public System.DateTime PAYMENT_DATE { get; set; }
-        public int DEBT_TOTAL { get; set; }
-        public int PAID_VALUE { get; set; }
-        public int TOTAL_SUBSCRIBER { get; set; }
-        public int REQUEST { get; set; }
-        public int RECEIPT { get; set; }
+        public long ID { get; set; }
+        public int USERID { get; set; }
+        public Nullable<System.DateTime> LOGIN_DATE { get; set; }
+        public string IP_ADDRESS { get; set; }
+        public string TOKEN { get; set; }
+        public bool TOKEN_STATUS { get; set; }
     
-        public virtual RECEIPT RECEIPT1 { get; set; }
-        public virtual REQUEST REQUEST1 { get; set; }
+        public virtual SEC_USER SEC_USER { get; set; }
     }
 }

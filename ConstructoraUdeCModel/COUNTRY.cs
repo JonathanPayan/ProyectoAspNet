@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCController
+namespace ConstructoraUdeCModel
 {
     using System;
     using System.Collections.Generic;

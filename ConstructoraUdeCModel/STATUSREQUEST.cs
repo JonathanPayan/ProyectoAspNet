@@ -7,26 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCController
+namespace ConstructoraUdeCModel
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class PROPERTY
+    public partial class STATUSREQUEST
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PROPERTY()
+        public STATUSREQUEST()
         {
             this.REQUEST = new HashSet<REQUEST>();
         }
     
-        public string CODE { get; set; }
-        public string IDENTIFICATION { get; set; }
-        public int VALUE { get; set; }
-        public bool STATUS { get; set; }
-        public string BLOCK { get; set; }
+        public int ID { get; set; }
+        public string NAME { get; set; }
+        public string DESCRIPTION { get; set; }
     
-        public virtual BLOCK BLOCK1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<REQUEST> REQUEST { get; set; }
     }
