@@ -7,27 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCController
+namespace ConstructoraUdeCModel
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class PROJECT
+    public partial class BLOCK
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PROJECT()
+        public BLOCK()
         {
-            this.BLOCK = new HashSet<BLOCK>();
+            this.PROPERTY = new HashSet<PROPERTY>();
         }
     
         public string CODE { get; set; }
         public string NAME { get; set; }
         public string DESCRIPTION { get; set; }
-        public string IMAGE { get; set; }
-        public string CITY { get; set; }
+        public string PROJECT { get; set; }
     
+        public virtual PROJECT PROJECT1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<BLOCK> BLOCK { get; set; }
-        public virtual CITY CITY1 { get; set; }
+        public virtual ICollection<PROPERTY> PROPERTY { get; set; }
     }
 }

@@ -7,30 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCController
+namespace ConstructoraUdeCModel
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class REQUEST
+    public partial class SEC_ROLE
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public REQUEST()
+        public SEC_ROLE()
         {
-            this.PAYMENT = new HashSet<PAYMENT>();
+            this.SEC_USER_ROLE = new HashSet<SEC_USER_ROLE>();
         }
     
         public int ID { get; set; }
-        public System.DateTime REQUEST_DATE { get; set; }
-        public int OFFER { get; set; }
-        public int CUSTOMER { get; set; }
-        public string PROPERTY { get; set; }
-        public int STATUSREQUEST { get; set; }
+        public string NAME { get; set; }
     
-        public virtual CUSTOMER CUSTOMER1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PAYMENT> PAYMENT { get; set; }
-        public virtual PROPERTY PROPERTY1 { get; set; }
-        public virtual STATUSREQUEST STATUSREQUEST1 { get; set; }
+        public virtual ICollection<SEC_USER_ROLE> SEC_USER_ROLE { get; set; }
     }
 }

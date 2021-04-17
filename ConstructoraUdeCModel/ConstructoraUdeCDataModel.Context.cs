@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ConstructoraUdeCController
+namespace ConstructoraUdeCModel
 {
     using System;
     using System.Data.Entity;
@@ -35,6 +35,10 @@ namespace ConstructoraUdeCController
         public virtual DbSet<PROPERTY> PROPERTY { get; set; }
         public virtual DbSet<RECEIPT> RECEIPT { get; set; }
         public virtual DbSet<REQUEST> REQUEST { get; set; }
+        public virtual DbSet<SEC_ROLE> SEC_ROLE { get; set; }
+        public virtual DbSet<SEC_SESSION> SEC_SESSION { get; set; }
+        public virtual DbSet<SEC_USER> SEC_USER { get; set; }
+        public virtual DbSet<SEC_USER_ROLE> SEC_USER_ROLE { get; set; }
         public virtual DbSet<STATUSREQUEST> STATUSREQUEST { get; set; }
     }
 }
